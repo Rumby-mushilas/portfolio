@@ -1,0 +1,295 @@
+ *{
+     margin: 0;
+     padding: 0;
+     font-family:'Poppins' , sans-serif;
+     box-sizing: border-box;
+ }
+body{
+      color:#fff;
+}
+
+.nav{
+  position: sticky;
+  top:0;
+  left:0;
+  width:100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  padding: 10px 10%;
+  background:black;
+}
+
+ul{
+	
+	
+	display:flex;
+	align-items:center;
+	flex-wrap:wrap;
+	
+}
+
+
+.nav ul li{
+     display: inline-block;
+     list-style: none;
+     margin:10px 20px; 
+}
+
+.nav ul li a{
+      color:#fff;
+      text-decoration: none;
+      font-size: 18px;
+      position:relative
+}
+.button{
+	padding:16px 18px;
+	margin: 10px;
+	background:#f00;
+	font-size:16px;
+	border:1px solid#fff;
+}
+.button a {
+	text-decoration: none;
+	color:#fff;
+}
+.button:hover{
+	background:#000;
+	font-size:18px;
+	border:1px solid #f00;
+}
+
+.nav ul li a:hover{
+     color:#f00;
+} 
+
+#home{
+   min-height:100vh;
+   height:100%;
+   width:100%;
+   align-items: center;
+   padding:20px 10%;
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   z-index:100;
+   background: #000;
+   flex-wrap:wrap;
+   gap:30px;
+}
+
+#qual{
+   min-height:100vh;
+   max-height:400vh;
+   width:100%;
+   display:grid;
+   grid-gap:20px;
+   background: #222;
+   margin-top:0;
+}
+
+.pc{
+	width:70%;
+	
+	
+	
+}
+.header-text h1{
+	font-size: 45px;
+}
+.skills{
+	width:100%;
+	padding:0px 20%;
+}
+.skills h2{
+	text-align: center;
+	font-size:40px;
+	font-weight:600;
+}
+.content{
+	display: flex;
+	align-items: center;
+	margin-top:60px;
+}
+.left{
+	width:100%;
+}
+.left h2{
+	text-align:left;
+	font-size:30px
+}
+.left p{
+	font-size:18px;
+	margin:25px 0;
+}
+.left a{
+	background-color:crimson;
+	color:white;
+	padding:8px 16px;
+	border:2px solid crimson;
+	border-radius:6px;
+	transition:all 0.3s ease;
+	text-decoration:none;
+	font-size:18px;
+	font-weight:500;
+	display:block;
+	width:200px;
+}
+.left a:hover{
+	background-color:transparent;
+	color:crimson;
+}
+.skillbar {
+	margin-bottom: 2.5rem;
+	margin-left: 28px;
+}
+
+.skills-right .skillbar .info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 12px;
+}
+
+.skills-right .skillbar .bar {
+	width: 100%;
+	height: 10px;
+	background-color: #2b4349;
+	border-radius: 25px;
+	margin-top: 10px;
+	position: relative;
+}
+
+.skillbar .bar span {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	left:0;
+	background: #f00;
+	border-radius: 25px;
+	box-shadow: #0e7474;
+}
+.skillbar .bar .maths{
+	width: 62%;
+	animation: maths 2s;
+}
+.skillbar .bar .account{
+	width: 79%;
+	animation: account 3s;
+}
+.skillbar .bar .cs{
+	width: 58%;
+	animation: cs 4s;
+}
+
+
+#project{
+   min-height:100vh;
+   height:100%;
+   width:100%;
+   justify-content:space-between;
+   align-items:center;
+   background: #000;
+}
+
+.section--title {
+	text-align: center;
+	padding: 5% 0 5% 0;
+}
+
+.projects{
+   display:grid;
+   grid-template-columns:repeat(3,1fr);
+   align-items: center;
+   grid-gap:4cm;
+   padding:20px 10%;
+}
+
+.projects--card{
+	position:relative;
+	border-radius:1rem;
+}
+.projects--img{
+	width:100%;
+	height:100%;
+}
+.projects--modal{
+	position:absolute;
+	left:0;
+	bottom:-100%;
+	width:100%;
+	height:100%;
+	background:linear-gradient(180deg,
+	             hsla(0,0%,0)0%,
+				hsla(var(--hue), 70%,40%, .8) 120%);
+	border-radius:1rem;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	transition:bottom .4s;	
+}
+.projects--subtitle,
+.projects--button{
+	color: var(--title-color);
+	font-size:var(--small-font-size);
+}
+.projects--subtitle{
+	display:block;
+	margin-bottom:25rem;
+}
+.projects--title{
+	margin-bottom: .75rem;
+}
+.projects--button{
+	display:flex;
+	align-items:center;
+	column-gap:.5rem;
+	font-weight:var(--font-medium);
+}
+.projects--button i{
+	font-size: 1.25rem;	
+}
+.projects--card:hover, .projects--model{
+	bottom:0;
+}
+
+#contact{
+   min-height:100vh;
+   height:100%;
+   width:100%;
+   align-items: center;
+   padding:20px 10%;
+   justify-content:space-between;
+   align-items:center;
+   background:#222;
+}
+
+input, textarea{
+	width: 100%;
+	border-radius: 2px solid #fff;
+	background-color: transparent;
+	padding: 1rem 1.2rem;
+	color: #fff;
+	margin: 5px 0 5px 0 ;
+}
+
+textarea {
+	height: 240px;
+}
+
+.button {
+	width: 165px;
+}
+
+.icons-s i{
+	font-size: 32px;
+	font-weight: 700;
+	margin: 8px;
+	color:grey;
+}
+
+btn1{
+	margin-left:100px;
+}
